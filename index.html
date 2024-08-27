@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador de texto</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	
+	<header>
+		
+		<img src="./assets/Logo.png" alt="Logo Alura Latam" class="logo">
+
+	</header>
+	
+	<main>
+		<div class="formulario">
+			
+			<form class="forma">
+				
+				<div class	="texto">
+					<textarea placeholder="Ingrese el texto aqui"></textarea>
+					
+					<div class="informacion">
+						<img src="./assets/informacion.png" alt="Icono de información">	
+						<span>
+							Solo letras minúsculas y sin acentos
+						</span>
+					</div>
+
+				</div>
+				
+				<div class="botones-encriptador">
+					<button onclick="encrypt()" type="button" class="contrainer_boton" id="botonEncriptar">Encriptar</button>
+					<button onclick="desencrypt()" type="button" class="contrainer_boton" id="botonDesencritpar">Desencriptar</button>		
+				</div>
+
+			</form>
+
+		</div>
+
+		<div class="salida_texto">
+			<div id="textoFinal"></div>
+			<div class="mensaje_vacio">
+				<img src="./assets/Muñeco.png" alt="Imagen de muñeco" class="imagen-muñeco">
+
+				<h3 class="titulo-mensaje">
+					Ningún mensaje fue encontrado
+				</h3>
+
+				<p class="descripcion-mensaje">
+					Ingresa el texto que deseas encriptar o desencriptar.
+				</p>
+			</div>
+			<button class="contrainer_boton boton-copiar" onclick="copiar()">Copiar Texto</button>
+		</div>
+
+	</main>
+	
+	<footer>
+		<p>Desarrollado por Valentina Gutiérrez Puentes</p>
+		<div class="redes-sociales">
+			<ul>
+				<li>
+					<a class="link_redes" href="https://github.com/vagupu">
+						<img src="./assets/github.png" alt="Logo Github">
+					</a>
+				</li>
+				<li>
+					<a class="link_redes" href="https://www.linkedin.com/in/valentinagutierrez-finanzas/">
+						<img src="./assets/linkedin.png" alt="Logo Github">
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</footer>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>	
